@@ -28,7 +28,7 @@ body{
   max-width:1000px;
   width:90%;
   padding:30px;
-  background:rgba(255,255,255,0.1);
+  background:rgba(0,0,0,0.3);
   backdrop-filter:blur(12px);
   border-radius:20px;
   text-align:center;
@@ -38,30 +38,34 @@ body{
 
 /* Header */
 .header .logo{
-  max-height:300px;
+  max-height:250px;
   width:auto;
   object-fit:contain;
   animation:float 3s ease-in-out infinite;
+  margin:0 auto;
+  display:block;
+  border-radius:12px;
 }
 .header h1{
   font-size:3rem;
   color:#ffde59;
   text-shadow:0 3px 10px rgba(0,0,0,0.5);
-  margin-top:10px;
+  margin-top:15px;
 }
 .tagline{
-  font-size:1.5rem;
+  font-size:1.8rem;
   margin-top:8px;
+  color:#fff;
 }
-.tagline span{ font-size:1rem; color:#e0e0e0; }
+.tagline span{ font-size:1.2rem; color:#e0e0e0; }
 
 /* Descripción */
 .description{
   margin:25px auto;
-  font-size:1.3rem;
-  line-height:1.8;
-  padding:22px;
-  background:rgba(255,255,255,0.1);
+  font-size:1.5rem;
+  line-height:1.9;
+  padding:25px;
+  background:rgba(0,0,0,0.25);
   border-radius:16px;
   opacity:0;
   transform:translateY(30px);
@@ -94,20 +98,25 @@ body{
   background:rgba(255,255,255,0.3);
 }
 .service img{
-  height:100px;
-  width:auto;
+  width:100%;
+  max-width:120px;
+  height:auto;
   margin-bottom:10px;
   object-fit:contain;
+  border-radius:12px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
 }
-.service p{ font-weight:600; font-size:1.2rem; }
-.service span{ font-size:0.9rem; color:#e0e0e0; }
+.service p{ font-weight:600; font-size:1.3rem; color:#fff; }
+.service span{ font-size:1rem; color:#e0e0e0; }
 
 /* Tarifas */
 .pricing{
   background:rgba(0,0,0,0.3);
   border-radius:16px;
-  padding:20px;
-  margin:20px auto;
+  padding:22px;
+  margin:25px auto;
   max-width:600px;
   opacity:0;
   transform:translateY(30px);
@@ -115,31 +124,31 @@ body{
 }
 .pricing.visible{opacity:1; transform:translateY(0);}
 .pricing h2{
-  font-size:2rem;
+  font-size:2.2rem;
   color:#ffde59;
-  margin-bottom:12px;
+  margin-bottom:15px;
 }
-.pricing ul{list-style:none; font-size:1.3rem; line-height:2;}
+.pricing ul{list-style:none; font-size:1.4rem; line-height:2; color:#fff;}
 
 /* Horario */
 .hours{
   margin:20px auto;
-  background:rgba(255,255,255,0.12);
+  background:rgba(0,0,0,0.25);
   border-radius:14px;
-  padding:16px;
+  padding:18px;
   max-width:500px;
   opacity:0;
   transform:translateY(30px);
   transition:all 0.8s ease;
 }
 .hours.visible{opacity:1; transform:translateY(0);}
-.hours h2{ font-size:1.8rem; color:#ffde59; margin-bottom:10px; }
-.hours p{ font-size:1.3rem; }
+.hours h2{ font-size:2rem; color:#ffde59; margin-bottom:10px; }
+.hours p{ font-size:1.3rem; color:#fff; }
 
 /* Footer */
 footer{
-  margin-top:25px;
-  font-size:1.2rem;
+  margin-top:30px;
+  font-size:1.3rem;
   color:#fff;
   opacity:0.9;
 }
@@ -188,8 +197,9 @@ footer span{ color:#e0e0e0; }
 /* Responsive */
 @media(max-width:768px){
   .header h1{ font-size:2.5rem; }
-  .tagline{ font-size:1.2rem; }
-  .description{ font-size:1.1rem; }
-  .pricing ul{ font-size:1.1rem; }
-  .service img{ height:80px; }
+  .tagline{ font-size:1.3rem; }
+  .description{ font-size:1.2rem; }
+  .pricing ul{ font-size:1.2rem; }
+  .service img{ max-width:100px; }
+  .service p{ font-size:1.1rem; }
 }
