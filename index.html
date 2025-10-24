@@ -3,21 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="WiFi Shop: tu refugio urbano con café, tortas, recargas, WiFi y más. ¡Todo en un solo lugar!">
+  <meta name="description" content="WiFi Shop: tu refugio urbano con café, tortas, recargas, WiFi y más.">
   <title>WiFi Shop</title>
   <link rel="stylesheet" href="info-style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Fondo dinámico -->
+
+  <!-- Fondo -->
   <div class="background"></div>
 
-  <main class="card">
+  <!-- Contenedor principal -->
+  <main class="container">
+
     <!-- Encabezado -->
     <header class="header">
       <img src="logo.png" alt="Logo WiFi Shop" class="logo">
       <h1>WiFi Shop</h1>
-      <p class="tagline">Tu refugio urbano en la terminal<br><span>Your urban refuge in the terminal</span></p>
+      <p class="tagline">Tu refugio urbano en la terminal · <span>Your urban refuge in the terminal</span></p>
     </header>
 
     <!-- Descripción -->
@@ -58,6 +61,7 @@
     <footer>
       <p>Gracias por apoyar a <strong>WiFi Shop</strong><br><span>Thank you for supporting WiFi Shop</span></p>
     </footer>
+
   </main>
 
   <!-- Modal de aviso -->
@@ -70,11 +74,12 @@
   </div>
 
   <script>
-    // Mostrar aviso tras 4 minutos
+    // Mostrar aviso después de 4 minutos
     const trialWarningTime = 240000;
     const modal = document.getElementById("trialModal");
     function closeModal() { modal.style.display = "none"; }
     setTimeout(() => { modal.style.display = "flex"; }, trialWarningTime);
   </script>
+
 </body>
 </html>
